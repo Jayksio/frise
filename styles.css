@@ -94,7 +94,9 @@ section {
 
 .date-square {
     width: 35%;
-    background-color: white;
+    background-image: url(/img/arrière\ plan\ orange.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
