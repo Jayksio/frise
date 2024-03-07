@@ -104,6 +104,9 @@ function changeDateFromSquare(date) {
   }
 }
 
+/* date affichée à l'arrivée sur le site */
+changeDateFromSquare(2022);
+
 /* event au click pour changer la date dans le carré */
 document.getElementById("next-date").addEventListener("click", function () {
   const nextDate = parseInt(this.textContent);
