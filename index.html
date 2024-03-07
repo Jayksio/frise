@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Frise Chronologique</title>
+
+    <!-- Quicksand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <section>
+            <!-- <div class="frise"></div> -->
+            <div class="timeline-container">
+                <div class="timeline">
+                    <div class="line"></div>
+                    <div class="event" id="event1" onclick="showText('Lorem ipsum', this)"><span
+                            class="event-date">2022</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="event" id="event2" onclick="showText('Lorem ipsum dolor', this)"><span
+                            class="event-date">2020</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="event" id="event3" onclick="showText('Lorem ipsum dolor sit amet', this)"><span
+                            class="event-date">2019</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="event" id="event4" onclick="showText('Lorem ipsum dolor sit amet lorem', this)"><span
+                            class="event-date">2018</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="event" id="event5" onclick="showText('Lorem ipsum dolor sit amet lorem ipsum', this)">
+                        <span class="event-date">2016</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="event" id="event6"
+                        onclick="showText('Lorem ipsum dolor sit amet lorem ipsum dolor', this)"><span
+                            class="event-date">2015</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="event" id="event7"
+                        onclick="showText('Lorem ipsum dolor sit amet lorem ipsum dolor sit', this)">
+                        <span class="event-date">2014</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="event" id="event8"
+                        onclick="showText('Lorem ipsum dolor sit amet lorem ipsum dolor sit amet', this)"><span
+                            class="event-date">2013</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="event" id="event9"
+                        onclick="showText('Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem', this)"><span
+                            class="event-date">2007</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="event" id="event10"
+                        onclick="showText('Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum', this)">
+                        <span class="event-date">2000</span>
+                    </div>
+                    <div class="line"></div>
+                    <!--<div class="event"
+                        onclick="showText('Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum', this)">
+                        <span class="event-date">2023</span>
+                    </div> -->
+                </div>
+
+                <div class="info-container">
+                    <div class="text-container">
+                        <div class="navigation-arrows">
+                            <button id="prev-arrow">◄</button>
+                            <button id="next-arrow">►</button>
+                        </div>
+                        <p id="event-text">TEST</p>
+                    </div>
+                    <div class="date-square">
+                        <p class="date-text" id="next-date">2019</p>
+                        <p class="date-text" id="selected-date">2020</p>
+                        <p class="date-text" id="prev-date">2022</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
