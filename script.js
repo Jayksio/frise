@@ -1,6 +1,9 @@
 /* frise chrono dans l'ordre décroissant */
 const dates = [2022, 2020, 2019, 2018, 2016, 2015, 2014, 2013, 2007, 2000];
 
+/* angle initial de la fleur orange */
+let fleurOrangeAngle = 45;
+
 function showText(date, element) {
   const text = getCustomText(date);
   const textContainer = document.getElementById("event-text");
@@ -9,12 +12,12 @@ function showText(date, element) {
   const events = document.querySelectorAll(".event");
   const index = Array.from(events).indexOf(element);
 
-  // supprime la div qui englobe le texte (h3 et p) à chaque nouvelle fois que la fonction est appelée
+  /* supprime la div qui englobe le texte (h3 et p) à chaque nouvelle fois que la fonction est appelée */
   while (textContainer.firstChild) {
     textContainer.removeChild(textContainer.firstChild);
   }
 
-  // ajout du nouvel élément HTML à textContainer (lié à la function getCustomText)
+  /* ajout du nouvel élément HTML à textContainer (lié à la function getCustomText) */
   textContainer.appendChild(text);
 
   /* remove du texte */
@@ -66,6 +69,12 @@ function showText(date, element) {
     precedenteDate.style.transform = "translateY(22px)";
     suivanteDate.style.transform = "translateY(-77px)";
   }, 50);
+
+  const fleurOrange = document.querySelector(".fleur-orange");
+  /* rotation de la fleur orange */
+  fleurOrangeAngle += 90; // ajoute 90 degrés à chaque clic
+  fleurOrange.style.transform = `rotate(${fleurOrangeAngle}deg)`; // met à jour l'angle de rotation
+  fleurOrange.style.transition = "300ms";
 }
 
 function getCustomText(date) {
