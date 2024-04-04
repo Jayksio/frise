@@ -91,6 +91,7 @@ section {
 
 .text-container {
     width: 60%;
+    position: relative;
 }
 
 #event-text div h3 {
@@ -103,6 +104,15 @@ section {
 #event-text div p {
     font-weight: 400;
     font-size: 16px;
+}
+
+.fleur-orange {
+    margin-top: 12px;
+    height: 40px;
+    width: 40px;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 20px;
 }
 
 .date-square {
