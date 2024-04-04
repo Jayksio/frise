@@ -9,7 +9,7 @@ function showText(date, element) {
   const events = document.querySelectorAll(".event");
   const index = Array.from(events).indexOf(element);
 
-  // suppr tout le contenu existant dans textContainer
+  // supprime la div qui englobe le texte (h3 et p) à chaque nouvelle fois que la fonction est appelée
   while (textContainer.firstChild) {
     textContainer.removeChild(textContainer.firstChild);
   }
