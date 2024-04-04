@@ -73,10 +73,11 @@ function getCustomText(date) {
   switch (date) {
     case 2000:
       const date2000h3 = document.createElement("h3");
-      date2000h3.textContent = "Lorem 2000";
+      date2000h3.textContent = "Création de l’association Colombbus ";
 
       const date2000p = document.createElement("p");
-      date2000p.textContent = "Lorem ipsum dolor sit amet 2000";
+      date2000p.textContent =
+        "En 2000, l’association Colombbus voit le jour, marquant le début de son engagement dans le domaine de l’innovation sociale et numérique.";
 
       const date2000div = document.createElement("div");
       date2000div.appendChild(date2000h3);
@@ -86,10 +87,12 @@ function getCustomText(date) {
 
     case 2007:
       const date2007h3 = document.createElement("h3");
-      date2007h3.textContent = "Lorem 2007";
+      date2007h3.textContent =
+        "Premier atelier Tangara d’initiation à la programmation";
 
       const date2007p = document.createElement("p");
-      date2007p.textContent = "Lorem ipsum dolor sit amet 2007";
+      date2007p.textContent =
+        "Colombbus organise le premier atelier Tangara, dédié à l’initiation à la programmation, spécifiquement conçu pour des collégiens en Zone d’Éducation Prioritaire (ZEP) dans le 18e arrondissement de Paris.";
 
       const date2007div = document.createElement("div");
       date2007div.appendChild(date2007h3);
@@ -99,10 +102,11 @@ function getCustomText(date) {
 
     case 2013:
       const date2013h3 = document.createElement("h3");
-      date2013h3.textContent = "Lorem 2013";
+      date2013h3.textContent = "Inauguration du Passage Numérique";
 
       const date2013p = document.createElement("p");
-      date2013p.textContent = "Lorem ipsum dolor sit amet 2013";
+      date2013p.textContent =
+        "En 2013, Colombbus réalise une étape importante en inaugurant le Passage Numérique dans le 10e arrondissement de Paris, renforçant ainsi sa présence et son impact sur le territoire Parisien.";
 
       const date2013div = document.createElement("div");
       date2013div.appendChild(date2013h3);
@@ -112,10 +116,12 @@ function getCustomText(date) {
 
     case 2014:
       const date2014h3 = document.createElement("h3");
-      date2014h3.textContent = "Lorem 2014";
+      date2014h3.textContent =
+        "Inauguration du premier ACI à Paris - Création de l’agence web sociale et solidaire";
 
       const date2014p = document.createElement("p");
-      date2014p.textContent = "Lorem ipsum dolor sit amet 2014";
+      date2014p.textContent =
+        "Colombbus atteint un jalon significatif en inaugurant le premier Atelier et Chantier d’Insertion (ACI) à Paris. Parallèlement, l’association crée l’agence web sociale et solidaire, afin de produire des sites internet dans le cadre des chantiers d’insertion.";
 
       const date2014div = document.createElement("div");
       date2014div.appendChild(date2014h3);
@@ -125,10 +131,12 @@ function getCustomText(date) {
 
     case 2015:
       const date2015h3 = document.createElement("h3");
-      date2015h3.textContent = "Lorem 2015";
+      date2015h3.textContent =
+        "Participation au lancement de la Grande École du Numérique - Mise en ligne de la plateforme declick.net";
 
       const date2015p = document.createElement("p");
-      date2015p.textContent = "Lorem ipsum dolor sit amet 2015";
+      date2015p.textContent =
+        "Colombbus s’engage dans le lancement de la Grande École du Numérique, une initiative nationale. Simultanément, la plateforme declick.net est mise en ligne, fournissant un espace d’initiation au code, alignant l’association avec les besoins croissants de formation dans le domaine numérique.";
 
       const date2015div = document.createElement("div");
       date2015div.appendChild(date2015h3);
@@ -138,10 +146,12 @@ function getCustomText(date) {
 
     case 2016:
       const date2016h3 = document.createElement("h3");
-      date2016h3.textContent = "Lorem 2016";
+      date2016h3.textContent =
+        "Ouverture d’un nouveau chantier d’insertion à Fontenay-aux-Roses";
 
       const date2016p = document.createElement("p");
-      date2016p.textContent = "Lorem ipsum dolor sit amet 2016";
+      date2016p.textContent =
+        "En 2016, Colombbus étend ses actions en ouvrant un nouveau chantier d’insertion à Fontenay-aux-Roses, consolidant ainsi son réseau d’initiatives sociales et numériques sur le territoire francilien.";
 
       const date2016div = document.createElement("div");
       date2016div.appendChild(date2016h3);
@@ -151,10 +161,12 @@ function getCustomText(date) {
 
     case 2018:
       const date2018h3 = document.createElement("h3");
-      date2018h3.textContent = "Lorem 2018";
+      date2018h3.textContent =
+        "Ouverture d’un nouveau chantier d’insertion à Evry - Démarrage de l’action Parkour Numerik’Up";
 
       const date2018p = document.createElement("p");
-      date2018p.textContent = "Lorem ipsum dolor sit amet 2018";
+      date2018p.textContent =
+        "Colombbus élargit son champ d’action en 2018 en ouvrant un nouveau chantier d’insertion à Evry, intégré au sein de l’ENSIIE. En parallèle, l’association lance l’action Parkour Numerik’Up, ciblant spécifiquement les NEET (ni en études, ni en emploi, ni en formation).";
 
       const date2018div = document.createElement("div");
       date2018div.appendChild(date2018h3);
@@ -164,10 +176,12 @@ function getCustomText(date) {
 
     case 2019:
       const date2019h3 = document.createElement("h3");
-      date2019h3.textContent = "Lorem 2019";
+      date2019h3.textContent =
+        "Création de l’entreprise 10MentionWeb Formation - Ouverture d’un nouveau chantier à Suresnes (92)";
 
       const date2019p = document.createElement("p");
-      date2019p.textContent = "Lorem ipsum dolor sit amet 2019";
+      date2019p.textContent =
+        "En 2019, Colombbus prend une décision stratégique en créant l’entreprise de l’Économie Sociale et Solidaire (ESS) 10MentionWeb Formation, devenant ainsi une filiale de Colombbus. L’association ouvre également un quatrième chantier à Suresnes en Île-de-France.";
 
       const date2019div = document.createElement("div");
       date2019div.appendChild(date2019h3);
@@ -177,10 +191,11 @@ function getCustomText(date) {
 
     case 2020:
       const date2020h3 = document.createElement("h3");
-      date2020h3.textContent = "Lorem 2020";
+      date2020h3.textContent = "Certification Qualiopi";
 
       const date2020p = document.createElement("p");
-      date2020p.textContent = "Lorem ipsum dolor sit amet 2020";
+      date2020p.textContent =
+        "Colombbus obtient la certification Qualiopi, attestant de la qualité de ses prestations de formation, renforçant ainsi sa position dans le secteur de la formation professionnelle.";
 
       const date2020div = document.createElement("div");
       date2020div.appendChild(date2020h3);
