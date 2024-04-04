@@ -84,6 +84,7 @@ section {
 
 .info-container {
     display: flex;
+    justify-content: space-between;
     margin-left: 20px;
     margin-top: 50px;
 }
@@ -105,7 +106,7 @@ section {
     border: 1px solid #F9945d;
     border-radius: 16px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .date-text {

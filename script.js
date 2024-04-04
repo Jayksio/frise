@@ -1,17 +1,21 @@
-/* frise chrono dans l'ordre croissant */
-/* const dates = [
-  2000, 2007, 2013, 2014, 2015, 2016, 2018, 2019, 2020, 2022,
-]; */
-
 /* frise chrono dans l'ordre décroissant */
 const dates = [2022, 2020, 2019, 2018, 2016, 2015, 2014, 2013, 2007, 2000];
 
-function showText(text, element) {
+function showText(date, element) {
+  const text = getCustomText(date);
   const textContainer = document.getElementById("event-text");
   const selectedDate = document.getElementById("selected-date");
 
   const events = document.querySelectorAll(".event");
   const index = Array.from(events).indexOf(element);
+
+  // suppr tout le contenu existant dans textContainer
+  while (textContainer.firstChild) {
+    textContainer.removeChild(textContainer.firstChild);
+  }
+
+  // ajout du nouvel élément HTML à textContainer (lié à la function getCustomText)
+  textContainer.appendChild(text);
 
   /* remove du texte */
   events.forEach((event) => {
@@ -22,8 +26,6 @@ function showText(text, element) {
   /* add sur le texte */
   element.classList.add("active");
   element.style.color = "#F9945d";
-
-  textContainer.textContent = text;
 
   /* affichage des dates et de leurs dates précédentes et suivantes (s'il y en a) */
   selectedDate.textContent = dates[index];
@@ -70,25 +72,137 @@ function getCustomText(date) {
   /* switch case selon l'année choisie via le carré pour obtenir un texte */
   switch (date) {
     case 2000:
-      return "Lorem ipsum ";
+      const date2000h3 = document.createElement("h3");
+      date2000h3.textContent = "Lorem 2000";
+
+      const date2000p = document.createElement("p");
+      date2000p.textContent = "Lorem ipsum dolor sit amet 2000";
+
+      const date2000div = document.createElement("div");
+      date2000div.appendChild(date2000h3);
+      date2000div.appendChild(date2000p);
+
+      return date2000div;
+
     case 2007:
-      return "Lorem ipsum dolor";
+      const date2007h3 = document.createElement("h3");
+      date2007h3.textContent = "Lorem 2007";
+
+      const date2007p = document.createElement("p");
+      date2007p.textContent = "Lorem ipsum dolor sit amet 2007";
+
+      const date2007div = document.createElement("div");
+      date2007div.appendChild(date2007h3);
+      date2007div.appendChild(date2007p);
+
+      return date2007div;
+
     case 2013:
-      return "Lorem ipsum dolor sit";
+      const date2013h3 = document.createElement("h3");
+      date2013h3.textContent = "Lorem 2013";
+
+      const date2013p = document.createElement("p");
+      date2013p.textContent = "Lorem ipsum dolor sit amet 2013";
+
+      const date2013div = document.createElement("div");
+      date2013div.appendChild(date2013h3);
+      date2013div.appendChild(date2013p);
+
+      return date2013div;
+
     case 2014:
-      return "Lorem ipsum dolor sit amet lorem";
+      const date2014h3 = document.createElement("h3");
+      date2014h3.textContent = "Lorem 2014";
+
+      const date2014p = document.createElement("p");
+      date2014p.textContent = "Lorem ipsum dolor sit amet 2014";
+
+      const date2014div = document.createElement("div");
+      date2014div.appendChild(date2014h3);
+      date2014div.appendChild(date2014p);
+
+      return date2014div;
+
     case 2015:
-      return "Lorem ipsum dolor sit amet lorem ipsum";
+      const date2015h3 = document.createElement("h3");
+      date2015h3.textContent = "Lorem 2015";
+
+      const date2015p = document.createElement("p");
+      date2015p.textContent = "Lorem ipsum dolor sit amet 2015";
+
+      const date2015div = document.createElement("div");
+      date2015div.appendChild(date2015h3);
+      date2015div.appendChild(date2015p);
+
+      return date2015div;
+
     case 2016:
-      return "Lorem ipsum dolor sit amet lorem ipsum dolor";
+      const date2016h3 = document.createElement("h3");
+      date2016h3.textContent = "Lorem 2016";
+
+      const date2016p = document.createElement("p");
+      date2016p.textContent = "Lorem ipsum dolor sit amet 2016";
+
+      const date2016div = document.createElement("div");
+      date2016div.appendChild(date2016h3);
+      date2016div.appendChild(date2016p);
+
+      return date2016div;
+
     case 2018:
-      return "Lorem ipsum dolor sit amet lorem ipsum dolor sit";
+      const date2018h3 = document.createElement("h3");
+      date2018h3.textContent = "Lorem 2018";
+
+      const date2018p = document.createElement("p");
+      date2018p.textContent = "Lorem ipsum dolor sit amet 2018";
+
+      const date2018div = document.createElement("div");
+      date2018div.appendChild(date2018h3);
+      date2018div.appendChild(date2018p);
+
+      return date2018div;
+
     case 2019:
-      return "Lorem ipsum dolor sit amet lorem ipsum dolor sit amet";
+      const date2019h3 = document.createElement("h3");
+      date2019h3.textContent = "Lorem 2019";
+
+      const date2019p = document.createElement("p");
+      date2019p.textContent = "Lorem ipsum dolor sit amet 2019";
+
+      const date2019div = document.createElement("div");
+      date2019div.appendChild(date2019h3);
+      date2019div.appendChild(date2019p);
+
+      return date2019div;
+
     case 2020:
-      return "Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem";
+      const date2020h3 = document.createElement("h3");
+      date2020h3.textContent = "Lorem 2020";
+
+      const date2020p = document.createElement("p");
+      date2020p.textContent = "Lorem ipsum dolor sit amet 2020";
+
+      const date2020div = document.createElement("div");
+      date2020div.appendChild(date2020h3);
+      date2020div.appendChild(date2020p);
+
+      return date2020div;
+
     case 2022:
-      return "Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum";
+      const date2022h3 = document.createElement("h3");
+      date2022h3.textContent =
+        "Ouverture d’un cinquième chantier à Massy - RNCP 34137 Responsable d’Espace de Médiation Numérique";
+
+      const date2022p = document.createElement("p");
+      date2022p.textContent =
+        "L’année 2022 marque une nouvelle étape avec l’ouverture d’un cinquième chantier à Massy, mettant l’accent sur la formation avec la reconnaissance RNCP 34137 pour le métier de Responsable d’Espace de Médiation Numérique. Cela consolide la position de Colombbus en tant qu’acteur majeur dans la médiation numérique et l’insertion sociale par le biais de la formation.";
+
+      const date2022div = document.createElement("div");
+      date2022div.appendChild(date2022h3);
+      date2022div.appendChild(date2022p);
+
+      return date2022div;
+
     default:
       return `erreur sur le switch case`;
   }
@@ -100,7 +214,7 @@ function changeDateFromSquare(date) {
 
   if (index !== -1) {
     let customText = getCustomText(date);
-    showText(customText, document.querySelector(`#event${index + 1}`));
+    showText(date, document.querySelector(`#event${index + 1}`));
   }
 }
 
@@ -125,7 +239,7 @@ document.getElementById("next-date").addEventListener("click", function () {
   suivanteDate.style.transform = "translateY(95px)";
   suivanteDate.style.transition = "50ms";
 
-  /* remise en place des valeurs par défaut */
+  /* remise en place des valeurs initiale */
   setTimeout(function () {
     selectedDate.style.transform = "translateY(-20px)";
     prevDate.style.transform = "translateY(22px)";
@@ -149,7 +263,7 @@ document.getElementById("prev-date").addEventListener("click", function () {
   suivanteDate.style.transform = "translateY(95px)";
   suivanteDate.style.transition = "50ms";
 
-  /* remise en place des paramètres par défaut */
+  /* remise en place des paramètres initiale */
   setTimeout(function () {
     selectedDate.style.transform = "translateY(-20px)";
     precedenteDate.style.transform = "translateY(22px)";
