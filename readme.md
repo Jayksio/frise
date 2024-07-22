@@ -2,6 +2,11 @@
 
 La documentation de la frise chronologique est destinée à un public connaissant WordPress et/ou la programmation front-end. Il s'agit d'un outil développé en JavaScript vanilla.
 
+## Sauvegarde
+
+Vous n'avez pas besoin de faire de sauvegarde avant de modifier la frise chronologique sur le site de Colombbus.
+Une version stable est disponible sur ce repository GitHub. Si jamais une modification venait à ne pas bien se passer, il est possible de redéployer une version fonctionnelle (avec les dates allant de 2000 à 2023).
+
 ## Généralités
 
 Pour mieux naviguer au sein des éléments HTML, CSS et JavaScript de la frise chronologique, il est vivement conseillé d'activer le Divi Builder et de passer en affichage filaire, option disponible en bas à gauche de votre écran une fois le Divi Builder activé.
