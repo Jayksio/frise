@@ -7,6 +7,11 @@ La documentation de la frise chronologique est destinée à un public connaissan
 Vous n'avez pas besoin de faire de sauvegarde avant de modifier la frise chronologique sur le site de Colombbus.
 Une version stable est disponible sur ce repository GitHub. Si jamais une modification venait à ne pas bien se passer, il est possible de redéployer une version fonctionnelle (avec les dates allant de 2000 à 2023).
 
+### Fichiers
+Le code HTML se trouve dans le fichier [index.html](https://github.com/Jayksio/frise/blob/master/index.html)
+Le script JavaScript se trouve dans le fichier [script.js](https://github.com/Jayksio/frise/blob/master/script.js)
+Le style CSS se trouve dans le fichier [styles.css](https://github.com/Jayksio/frise/blob/master/styles.css)
+
 ## Généralités
 
 Pour mieux naviguer au sein des éléments HTML, CSS et JavaScript de la frise chronologique, il est vivement conseillé d'activer le Divi Builder et de passer en affichage filaire, option disponible en bas à gauche de votre écran une fois le Divi Builder activé.
