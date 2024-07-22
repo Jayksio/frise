@@ -82,13 +82,15 @@ Désormais, vous en avez terminé avec le script JavaScript. Il vous faudra main
 
 Voici l’exemple d’une date affichée dans le HTML : 
 
-```javascript
+```html
 <div class="line"></div>
                     <div class="event" id="event1" onclick="showText(2023, this)"><span class="event-date">2023</span>
                     </div>
+```
 
 Par exemple, pour ajouter 2024, copier ce code et ajouter le avant celui-ci en remplaçant la date copiée par la date désirée :
 
+```html
 <div class="line"></div>
                     <div class="event" id="event1" onclick="showText(2024, this)"><span class="event-date">2024</span>
                     </div>
@@ -98,7 +100,7 @@ Vous devrez également modifier tous les id des éléments HTML. La dernière da
 
 Ensuite, se trouve à la fin du code :
 
-```javascript
+```html
  <div class="date-square">
                         <p class="date-text" id="next-date">2020</p>
                         <p class="date-text" id="selected-date">2022</p>
@@ -108,7 +110,7 @@ Ensuite, se trouve à la fin du code :
 
 Vous pouvez modifier ce script en y ajoutant les 3 dernières dates. Ce sont les 3 dernières dates de la frise, nous passerions donc par exemple à :
 
-```
+```html
  <div class="date-square">
                         <p class="date-text" id="next-date">2022</p>
                         <p class="date-text" id="selected-date">2023</p>
@@ -120,7 +122,7 @@ Vous pouvez modifier ce script en y ajoutant les 3 dernières dates. Ce sont les
 
 Pour supprimer une date, par exemple, 2016, il faut se rendre sur le module code “Frise chronologique” et retirer toutes la balise <div> qui entoure la date, et également la balise <div> avec la classe “line” qui précède. Il faudrait donc supprimer les éléments suivants :
 
-```javascript
+```html
 <div class="line"></div>
 <div class="event" id="event6" onclick="showText(2016, this)">
                        <span class="event-date">2016</span>
