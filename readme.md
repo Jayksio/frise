@@ -8,9 +8,10 @@ Vous n'avez pas besoin de faire de sauvegarde avant de modifier la frise chronol
 Une version stable est disponible sur ce repository GitHub. Si jamais une modification venait à ne pas bien se passer, il est possible de redéployer une version fonctionnelle (avec les dates allant de 2000 à 2023).
 
 ### Fichiers
-Le code HTML se trouve dans le fichier [index.html](https://github.com/Jayksio/frise/blob/master/index.html) <br>
-Le script JavaScript se trouve dans le fichier [script.js](https://github.com/Jayksio/frise/blob/master/script.js) <br>
-Le style CSS se trouve dans le fichier [styles.css](https://github.com/Jayksio/frise/blob/master/styles.css) <br>
+
+Le code HTML se trouve dans le fichier <a href="https://github.com/Jayksio/frise/blob/master/index.html" target="_blank" rel="noopener noreferrer">index.html</a> <br>
+Le script JavaScript se trouve dans le fichier <a href="https://github.com/Jayksio/frise/blob/master/script.js" target="_blank" rel="noopener noreferrer">script.js</a> <br>
+Le style CSS se trouve dans le fichier <a href="https://github.com/Jayksio/frise/blob/master/styles.css" target="_blank" rel="noopener noreferrer">styles.css</a> <br>
 
 ## Généralités
 
