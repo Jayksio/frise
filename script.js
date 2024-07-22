@@ -1,8 +1,9 @@
+<script>
 /* frise chrono dans l'ordre décroissant */
-const dates = [2022, 2020, 2019, 2018, 2016, 2015, 2014, 2013, 2007, 2000];
+const dates = [2023, 2022, 2020, 2019, 2018, 2016, 2015, 2014, 2013, 2007, 2000];
 
 /* angle initial de la fleur orange */
-let fleurOrangeAngle = 45;
+// let fleurOrangeAngle = 45;
 
 function showText(date, element) {
   const text = getCustomText(date);
@@ -66,15 +67,15 @@ function showText(date, element) {
   /* remise en place des paramètres par défaut */
   setTimeout(function () {
     selectedDate.style.transform = "translateY(-20px)";
-    precedenteDate.style.transform = "translateY(22px)";
-    suivanteDate.style.transform = "translateY(-77px)";
+    precedenteDate.style.transform = "translateY(-14px)";
+    suivanteDate.style.transform = "translateY(-38px)";
   }, 50);
 
-  const fleurOrange = document.querySelector(".fleur-orange");
+//  const fleurOrange = document.querySelector(".fleur-orange");
   /* rotation de la fleur orange */
-  fleurOrangeAngle += 90; // ajoute 90 degrés à chaque clic
-  fleurOrange.style.transform = `rotate(${fleurOrangeAngle}deg)`; // met à jour l'angle de rotation
-  fleurOrange.style.transition = "300ms";
+ // fleurOrangeAngle += 90; // ajoute 90 degrés à chaque clic
+ // fleurOrange.style.transform = `rotate(${fleurOrangeAngle}deg)`; // met à jour l'angle de rotation
+//  fleurOrange.style.transition = "300ms";
 }
 
 function getCustomText(date) {
@@ -227,6 +228,21 @@ function getCustomText(date) {
 
       return date2022div;
 
+    case 2023:
+      const date2023h3 = document.createElement("h3");
+      date2023h3.textContent =
+        "Modification des statuts de l’association : mise en place de l’adhésion pour les bénéficiaires des actions de médiation numérique";
+
+      const date2023p = document.createElement("p");
+      date2023p.innerHTML =
+        "Changement des noms des ateliers de médiation numérique<br>Renouvellement de la certification Qualiopi";
+
+      const date2023div = document.createElement("div");
+      date2023div.appendChild(date2023h3);
+      date2023div.appendChild(date2023p);
+
+      return date2023div;
+      
     default:
       return `erreur sur le switch case`;
   }
@@ -243,7 +259,7 @@ function changeDateFromSquare(date) {
 }
 
 /* date affichée à l'arrivée sur le site */
-changeDateFromSquare(2022);
+changeDateFromSquare(2023);
 
 /* event au click pour changer la date dans le carré */
 document.getElementById("next-date").addEventListener("click", function () {
@@ -257,17 +273,17 @@ document.getElementById("next-date").addEventListener("click", function () {
 
   /* effet roulette */
   selectedDate.style.transform = "translateY(120px)";
-  selectedDate.style.transition = "50ms";
+  selectedDate.style.transition = "100ms";
   prevDate.style.transform = "translateY(80px)";
-  prevDate.style.transition = "50ms";
-  suivanteDate.style.transform = "translateY(95px)";
-  suivanteDate.style.transition = "50ms";
+  prevDate.style.transition = "100ms";
+  suivanteDate.style.transform = "translateY(95px) !important";
+  suivanteDate.style.transition = "100ms";
 
   /* remise en place des valeurs initiale */
   setTimeout(function () {
     selectedDate.style.transform = "translateY(-20px)";
-    prevDate.style.transform = "translateY(22px)";
-    suivanteDate.style.transform = "translateY(-77px)";
+    prevDate.style.transform = "translateY(-14px)";
+    suivanteDate.style.transform = "translateY(-38px)";
   }, 50);
 });
 
@@ -281,16 +297,17 @@ document.getElementById("prev-date").addEventListener("click", function () {
   }
   /* effet roulette */
   selectedDate.style.transform = "translateY(120px)";
-  selectedDate.style.transition = "50ms";
+  selectedDate.style.transition = "100ms";
   precedenteDate.style.transform = "translateY(80px)";
-  precedenteDate.style.transition = "50ms";
-  suivanteDate.style.transform = "translateY(95px)";
-  suivanteDate.style.transition = "50ms";
+  precedenteDate.style.transition = "100ms";
+  suivanteDate.style.transform = "translateY(95px) !important";
+  suivanteDate.style.transition = "100ms";
 
   /* remise en place des paramètres initiale */
   setTimeout(function () {
     selectedDate.style.transform = "translateY(-20px)";
-    precedenteDate.style.transform = "translateY(22px)";
-    suivanteDate.style.transform = "translateY(-77px)";
+    precedenteDate.style.transform = "translateY(-14px)";
+    suivanteDate.style.transform = "translateY(-38px)";
   }, 50);
 });
+</script>
