@@ -1,6 +1,15 @@
 # Frise chronologique - Documentation
 
-## Frise chronologique - Desktop
+La documentation de la frise chronologique est destinée à un public connaissant WordPress et/ou la programmation front-end. Il s'agit d'un outil développé en JavaScript vanilla.
+
+## Généralités
+
+Pour mieux naviguer au sein des éléments HTML, CSS et JavaScript de la frise chronologique, il est vivement conseillé d'activer le Divi Builder et de passer en affichage filaire, option disponible en bas à gauche de votre écran une fois le Divi Builder activé.
+
+![image](https://github.com/user-attachments/assets/bd342bc8-ce15-44c5-964e-ff198a64361a)
+
+
+## Frise chronologique - Desktop et tablette
 
 ### Création d’une date
 
@@ -187,3 +196,15 @@ Il s’agit du paragraphe de l’année 2000 qui est entre guillemets. Il suffit
 ### Modifier l’année affichée par défaut à l’utilisateur lorsqu’il arrive sur la page
 
 Il suffit de modifier la fonction changeDateFromSquare(2023); et d’y mettre la date choisie entre les parenthèses.
+
+## Frise chronologique - Mobile
+
+Pour la version mobile, il faudra activer le Divi Builder et se rendre dans l'accordéon dont le module s'appelle "Frise chronologique - Mobile". Cet élément est un module accordéon de Divi.
+
+## Modifier le style
+
+Pour visualiser le style de la frise chronologique, activez le Divi Builder. En bas au centre de votre page se trouve un menu dans lequel il y a une icône d'engrenage.
+
+![image](https://github.com/user-attachments/assets/16aa7c69-c5f9-4cd7-9987-52c8fc098e92)
+
+Cliquez dessus puis dans l'onglet "Avancé", vous trouverez une section "Personnaliser CSS". C'est ici que se trouve la totalité du style de la frise chronologique.
