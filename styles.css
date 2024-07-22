@@ -1,169 +1,171 @@
-main {
+/* en dev, utile pour centrer l'élément */
+/* main {
   width: 80%;
   margin: auto;
 }
+*/
 
-section {
-  font-family: "Quicksand", sans-serif;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  height: 100vh;
-  font-weight: bold;
+/* frise */
+.section-frise {
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-weight: bold;
 }
 
 .timeline-container {
-  width: 100%;
+    width: 100%;
 }
 
 .timeline {
-  display: flex;
-  margin-top: 20px;
-  position: relative;
-  width: 100%;
-  justify-content: center;
+    display: flex;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    justify-content: center;
 }
 
 .line {
-  height: 5px;
-  background-color: #e6e6e6;
-  width: 6%;
-  padding: 0;
-  margin: 0;
-  align-self: center;
+    height: 5px;
+    background-color: #e6e6e6;
+    width: 8%;
+    padding: 0;
+    margin: 0;
+    align-self: center;
 }
 
 .event {
-  position: relative;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #e6e6e6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #e6e6e6;
-  cursor: pointer;
-  margin: 0;
-  transition: background-color 0.3s ease;
+    position: relative;
+    width: 20px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e6e6e6;
+    cursor: pointer;
+    margin: 0;
+    transition: background-color 0.3s ease;
 }
 
 .event:hover {
-  background-color: #f9945d;
+    background-color: #F9945d;
 }
 
 .text-container {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .frise {
-  height: 4px;
-  background-color: #e6e6e6;
-  width: 75%;
-  position: absolute;
-  top: 24.4%;
+    height: 4px;
+    background-color: #e6e6e6;
+    width: 75%;
+    position: absolute;
+    top: 24.4%;
 }
 
 .event {
-  position: relative;
+    position: relative;
 }
 
 /* pour la date active */
 .event.active {
-  background-color: #f9945d;
+    background-color: #F9945d;
 }
 
 .event-date {
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  transform: translateX(-50%);
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .info-container {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 20px;
-  margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0px;
+    margin-top: 50px;
 }
 
 .text-container {
-  width: 60%;
-  position: relative;
+    width: 60%;
+    position: relative;
 }
 
 #event-text div h3 {
-  color: #f9945d;
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: bold;
+    color: #F9945d;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 #event-text div p {
-  font-weight: 400;
-  font-size: 16px;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .fleur-orange {
-  margin-top: 12px;
-  height: 40px;
-  width: 40px;
-  transform: rotate(30deg);
-  position: absolute;
-  bottom: 20px;
+    margin-top: 12px;
+    height: 40px;
+    width: 40px;
+    transform: rotate(30deg);
+    position: absolute;
+    bottom: -22%;
 }
 
 .date-square {
-  width: 35%;
-  background-image: url(img/bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 30px 0px;
-  height: 250px;
-  border: 1px solid #f9945d;
-  border-radius: 16px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  overflow: hidden;
+    width: 35%;
+    background-image: url(https://www.colombbus.org/wp-content/uploads/2024/04/arriere-plan-orange.png);
+    background-repeat: no-repeat;
+    background-size: 500%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 0px;
+    height: 250px;
+    border: 1px solid #F9945d;
+    border-radius: 16px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    overflow: hidden;
 }
 
 .date-text {
-  text-align: center;
-  margin: 0;
-  font-size: 80px;
-  cursor: pointer;
+    text-align: center;
+    margin: 0;
+    font-size: 80px;
+    cursor: pointer;
 }
 
 button {
-  height: 40px;
-  width: 40px;
-  font-size: 18px;
-  background-color: white;
-  color: #f9945d;
-  border: 1px solid #f9945d;
-  border-radius: 50%;
-  cursor: pointer;
-  outline: none;
+    height: 40px;
+    width: 40px;
+    font-size: 18px;
+    background-color: white;
+    color: #F9945d;
+    border: 1px solid #F9945d;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
 }
 
 #prev-date {
-  transform: translateY(22px);
-  color: #e6e6e6;
-  transition: 500ms;
+    transform: translateY(-14px);
+    color: #e6e6e6;
+    transition: 500ms;
 }
 
 #next-date {
-  transform: translateY(-77px);
-  color: #e6e6e6;
-  transition: 500ms;
+    transform: translateY(-38px) !important;
+    color: #e6e6e6;
+    transition: 500ms;
 }
 
 #selected-date {
-  transform: translateY(-20px);
-  color: #f9945d;
-  transition: 500ms;
+    transform: translateY(-20px);
+    color: #F9945d;
+    transition: 500ms;
 }
