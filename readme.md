@@ -1,6 +1,6 @@
 # Frise chronologique - Documentation
 
-La documentation de la frise chronologique est destinée à un public connaissant WordPress et/ou la programmation front-end. Il s'agit d'un outil développé en JavaScript vanilla.
+La documentation de la frise chronologique est destinée à un public connaissant la programmation front-end. Il s'agit d'un outil développé en JavaScript vanilla.
 
 ## Sauvegarde
 
